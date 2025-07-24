@@ -5,6 +5,7 @@
 
 a {
     font-family: "Chloe";
+    font-size: x-large;
     text-decoration: none;
     color: white;
 }
@@ -53,8 +54,8 @@ main {
 }
 
 .button {
-    width: 60vw;
-    height: 10vw;
+    width: 70vw;
+    height: 11vw;
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -62,7 +63,7 @@ main {
 }
 
 .button-content {
-    width: 60vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,11 +77,8 @@ main {
 }
 
 .button-icon {
-    width: 5vw;
-    height: 5vw;
-}
-
-.map-button {
+    width: 6vw;
+    height: 6vw;
 }
 
 .map-text {
@@ -90,6 +88,7 @@ main {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     font-family: "Chloe";
+    font-size: x-large;
     color: white;
 }
 
