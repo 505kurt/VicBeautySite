@@ -5,7 +5,7 @@
 
 a {
     font-family: "Chloe";
-    font-size: clamp(2rem, 2.3vw + 1rem, 35px);;
+    font-size: clamp(2.5rem, 5vw + 1.5rem, 64px);
     text-decoration: none;
     color: white;
 }
@@ -89,7 +89,7 @@ main {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     font-family: "Chloe";
-    font-size: clamp(2rem, 2.3vw + 1rem, 35px);
+    font-size: clamp(2.5rem, 5vw + 1.5rem, 64px);
     color: white;
 }
 
