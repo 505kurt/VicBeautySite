@@ -46,6 +46,14 @@ main {
     z-index: 1;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 .header-bg {
     z-index: 0;
 }
@@ -102,6 +110,27 @@ main {
     margin-top: -2vh;
 }
 
+.social-links {
+    display: flex;
+    gap: 5vw;
+}
+
+.social-button {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: scale 1s ease,background-color 0.8s ease;
+}
+
+.social-button:hover{
+    scale: 1.1;
+    background-color: #2f0101ff;
+}
+
 .buttons-column {
     display: flex;
     flex-direction: column;
@@ -112,6 +141,9 @@ main {
 .link-button {
     width: 65vw;
     height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: none;
     border-radius: 96px;
     background-color: #500404;
@@ -125,6 +157,18 @@ main {
 .link-button:hover {
     scale: 1.1;
     background-color: #2f0101ff;
+}
+
+.button-icon {
+    width: auto;
+    height: 7.5vh;
+}
+
+.button-sparkle {
+    width: auto;
+    height: 7.5vh;
+    margin-top: -7.5vh;
+    margin-right: -2vw;
 }
 
 .stars-bg {
