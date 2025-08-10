@@ -5,13 +5,26 @@
     src: url("fonts/Chloe-Regular.otf");
 }
 
+@font-face {
+    font-family: 'Operetta';
+    src: url('fonts/Operetta52-Bold.otf');
+}
+
+
+@font-face {
+    font-family: 'Hopipolla';
+    src: url('fonts/Hopipolla.ttf');
+}
+
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header {
@@ -24,14 +37,20 @@ header {
 
 main {
     width: 150vw;
-    height: auto;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -5vh;
-    background-color: #2f0101ff;
-    border-top-right-radius: 50%;
+    margin-top: -11vh;
+    margin-bottom: 0;
+    background: linear-gradient(
+    to bottom,
+    #2f0101ff 0%,
+    #2f0101ff 70%,
+    #000000 100%
+);
     border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     z-index: 1;
 }
 
@@ -50,4 +69,49 @@ main {
     margin-top: -5vh;
     border-radius: 50%;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 1);
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Operetta';
+    font-size: 64px;
+    color: whitesmoke;
+    margin-top: 1vh;
+}
+
+.title img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: -32px;
+}
+
+.subtitle {
+    font-family: 'Hopipolla';
+    font-size: 64px;
+    color: whitesmoke;
+    background: linear-gradient(to left, transparent, #500404, transparent);
+    margin-top: -2vh;
+}
+
+.buttons-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    gap: 2vh;
+}
+
+.link-button {
+    width: 65vw;
+    height: 20vw;
+    border: none;
+    border-radius: 96px;
+    background-color: #500404;
+    font-family: 'Operetta';
+    font-size: 48px;
 }
