@@ -23,8 +23,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    background: linear-gradient(to bottom,#2f0101ff 0%,#2f0101ff 50%,#000000 100%);
+    overflow: hidden;
 }
 
 header {
@@ -36,31 +36,34 @@ header {
 }
 
 main {
-    width: 150vw;
-    height: 90vh;
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: -11vh;
     margin-bottom: 0;
-    background: linear-gradient(
-    to bottom,
-    #2f0101ff 0%,
-    #2f0101ff 70%,
-    #000000 100%
-);
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
     z-index: 1;
 }
 
 .header-bg {
-    z-index: -1;
+    z-index: 0;
 }
 
 .img-bg {
     width: 100vw;
     height: auto;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: #2f0101ff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 .logo img {
@@ -114,4 +117,18 @@ main {
     background-color: #500404;
     font-family: 'Operetta';
     font-size: 48px;
+    color: whitesmoke;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.6);
+    transition: scale 1s ease, background-color 0.8s ease;
+}
+
+.link-button:hover {
+    scale: 1.1;
+    background-color: #2f0101ff;
+}
+
+.stars-bg {
+    width: 100vw;
+    height: auto;
+    margin-top: auto;
 }
