@@ -1,111 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Amiri:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 @font-face {
-    font-family: "Chloe";
+    font-family: 'Chloe';
     src: url("fonts/Chloe-Regular.otf");
 }
 
-a {
-    font-family: "Chloe";
-    font-size: clamp(2.2rem, 3.5vw + 1rem, 48px);
-    text-decoration: none;
-    color: white;
-}
-
-a::before {
-    color: inherit;
-}
-
-a::after {
-    color: inherit;
-}
-
-html {
+html, body {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #0A0000 30%, #220000 60%, #0A0000 100%);
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
 }
 
 main {
+    width: 150vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vh;
+    margin-top: -5vh;
+    background-color: #2f0101ff;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    z-index: 1;
 }
 
-.stars-background {
-    width: 80vw;
-    height: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/images/stars.gif");
-    background-size: contain;
-    background-repeat: repeat-x;
+.header-bg {
+    z-index: -1;
 }
 
-.stars-background img {
-    width: auto;
-    height: 40vw;
+.img-bg {
+    width: 100vw;
+    height: auto;
 }
 
-.buttons-column {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.button {
-    width: 90vw;
-    height: 15vw;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    transition: scale 0.5s ease, box-shadow 0.5s ease;
-}
-
-.button-content {
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-}
-
-.button:hover {
-    scale: 1.05;
-    box-shadow: 0 4px 12px rgba(34, 0, 0, 0.6);
-}
-
-.button-icon {
-    width: 6vw;
-    height: 6vw;
-    margin-left: auto;
-}
-
-.map-text {
-    width: fit-content;
-    padding: 3vw;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    font-family: "Chloe";
-    font-size: clamp(2.2rem, 3.5vw + 1rem, 48px);
-    color: white;
-}
-
-.map-frame {
-    width: 90vw;
-    height: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.map {
-    width: 80vw;
-    height: 80vw;
+.logo img {
+    width: 25vw;
+    height: auto;
+    margin-top: -5vh;
+    border-radius: 50%;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 1);
 }
