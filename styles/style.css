@@ -57,6 +57,10 @@
         height: 12vw !important;
     }
 
+    .button-icon {
+        height: 7.5vw !important;
+    }
+
     .stars-bg {
         display: none;
     }
