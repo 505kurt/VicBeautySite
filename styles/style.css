@@ -16,6 +16,52 @@
     src: url('fonts/Hopipolla.ttf');
 }
 
+@media (min-aspect-ratio: 1/1) {
+    html {
+        background-image: url("../assets/images/bg.png") !important;
+        background-color: transparent !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    body {
+        background: transparent !important;
+        backdrop-filter: blur(8px);
+    }
+
+    header {
+        display: none !important;
+    }
+
+    main {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20vw;
+        scale: 0.5;
+    }
+
+    .bubble {
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        padding: 5%;
+        border-radius: 30px !important;
+        backdrop-filter: blur(8px);
+    }
+
+    .buttons-column {
+        gap: 5vh !important;
+    }
+
+    .link-button {
+        width: 45vw !important;
+        height: 12vw !important;
+    }
+
+    .stars-bg {
+        display: none;
+    }
+}
+
 html, body {
     height: 100%;
     margin: 0;
