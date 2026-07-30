@@ -17,7 +17,7 @@ export default function Home() {
                         <p className="text-white text-center font-bauer">Onde técnica, arte e estilo se encontram.<br/>Especialista em Anime Lashes</p>
                     </div>
                 </div>
-                <DefaultButton href="/Catálogo Vic Beauty.pdf" className="h-[15vh] w-[80%] xl:h-full xl:w-full flex flex-col xl:flex-row justify-center xl:items-center xl:gap-2 xl:row-span-1 xl:col-span-3">
+                <DefaultButton href="/Catalogo.pdf" className="h-[15vh] w-[80%] xl:h-full xl:w-full flex flex-col xl:flex-row justify-center xl:items-center xl:gap-2 xl:row-span-1 xl:col-span-3">
                     <span className="text-white text-4xl text-left font-cinzel-decorative ml-[5%]">TÉCNICAS</span>
                     <span className="text-[#963c2d] text-4xl text-right font-cinzel mr-[5%]">E SERVIÇOS</span>
                 </DefaultButton>
