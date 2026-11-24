@@ -8,7 +8,7 @@ interface ButtonProps {
 
 export default function DefaultButton({ className, href, children } : ButtonProps) {
     return (
-        <a href={href} className={`bg-[rgb(66,0,0,0.4)] cursor-pointer ${className}`}>
+        <a href={href} className={`bg-[rgba(66,0,0,0.6)] cursor-pointer ${className}`}>
             {children}
         </a>
     )

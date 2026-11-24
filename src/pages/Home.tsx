@@ -1,7 +1,7 @@
 import DefaultButton from "../components/DefaultButton"
 
-import bumper1 from "../assets/images/bumper1.png"
-import bumper2 from "../assets/images/bumper2.png"
+import bumper1 from "../assets/images/bumper1.jpg"
+import bumper2 from "../assets/images/bumper2.jpg"
 
 export default function Home() {
     return (
