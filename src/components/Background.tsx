@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Outlet } from "react-router-dom"
 
 import Iridescence from "./Iridescence"
+import MobileGlitter from "./MobileGlitter"
 import mobileBg from "../assets/images/mobile-bg.jpg"
 
 export default function Background() {
@@ -30,6 +31,9 @@ export default function Background() {
                     backgroundSize: "auto 100%",
                 }}
             />
+
+            {/* Efeito glitter de partículas para mobile (compartimentarizado: remova ou comente para voltar atrás) */}
+            {!isDesktop && <MobileGlitter />}
 
             {/* Fundo animado para desktop */}
             {isDesktop && (
